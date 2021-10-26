@@ -1,4 +1,5 @@
 import { Component } from "react";
+import FormEtudiant from "../form/Form_etudiant";
 
 class CompEtudiant extends Component {
 

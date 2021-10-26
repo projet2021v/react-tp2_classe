@@ -1,8 +1,10 @@
+import { getByTestId } from '@testing-library/dom';
 import './App.css';
 import CompEnseignant from './component/Comp_enseignant';
 import CompEtudiant from './component/Comp_etudiant';
 import Enseignant from './entity/Enseignant';
 import Etudiant from './entity/Etudiant';
+import FormEtudiant from './form/Form_etudiant';
 
 function App() {
 
@@ -43,14 +45,22 @@ function App() {
   return (
     <div>
       <div>
+      <h2>Formulaire ajout étudiant</h2>
+        <FormEtudiant liste_etud={dataEtudiant} />
+      </div>
+
+      {/* <div>
         <h2>Nos étudiants</h2>
         <CompEtudiant tab_col={colEtudiant} tab_data={dataEtudiant}/>
       </div>
-      <hr/>
+      
       <div>
         <h2>Nos enseignants</h2>
         <CompEnseignant tab_col={colEnseignant} tab_data={dataEnseignant} />
-      </div>
+      </div> */}
+      
+      
+
     </div>
   );
 }

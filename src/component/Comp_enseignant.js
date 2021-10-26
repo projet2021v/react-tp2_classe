@@ -46,7 +46,7 @@ class CompEnseignant extends Component {
                     <td>{enseignant.age}</td>
                     <td>{enseignant.adresse}</td>
                     <td>{enseignant.poste}</td>
-                    <td>{enseignant.anciennete}</td>
+                    <td>{enseignant.anciennet}</td>
                 </tr>
         );
     }
