@@ -16,12 +16,12 @@ function App() {
   colEtudiant.push("CLASSE");
   colEtudiant.push("NB MATIÈRES");
 
-  let dataEtudiant = [];
-  dataEtudiant.push(new Etudiant("nom1", "prenom1", 1, "adresse1", "classe1", 1));
-  dataEtudiant.push(new Etudiant("nom2", "prenom2", 2, "adresse2", "classe2", 2));
-  dataEtudiant.push(new Etudiant("nom3", "prenom3", 3, "adresse3", "classe3", 3));
-  dataEtudiant.push(new Etudiant("nom4", "prenom4", 4, "adresse4", "classe4", 4));
-  dataEtudiant.push(new Etudiant("nom5", "prenom5", 5, "adresse5", "classe5", 5));
+  // let dataEtudiant = [];
+  // dataEtudiant.push(new Etudiant("nom1", "prenom1", 1, "adresse1", "classe1", 1));
+  // dataEtudiant.push(new Etudiant("nom2", "prenom2", 2, "adresse2", "classe2", 2));
+  // dataEtudiant.push(new Etudiant("nom3", "prenom3", 3, "adresse3", "classe3", 3));
+  // dataEtudiant.push(new Etudiant("nom4", "prenom4", 4, "adresse4", "classe4", 4));
+  // dataEtudiant.push(new Etudiant("nom5", "prenom5", 5, "adresse5", "classe5", 5));
 
 
   let colEnseignant = [];
@@ -46,15 +46,15 @@ function App() {
     <div>
       <div>
       <h2>Formulaire ajout étudiant</h2>
-        <FormEtudiant liste_etud={dataEtudiant} />
+        <FormEtudiant tab_col={colEtudiant} liste_etud={[]} />
       </div>
 
       {/* <div>
         <h2>Nos étudiants</h2>
         <CompEtudiant tab_col={colEtudiant} tab_data={dataEtudiant}/>
-      </div>
+      </div> */}
       
-      <div>
+      {/* <div>
         <h2>Nos enseignants</h2>
         <CompEnseignant tab_col={colEnseignant} tab_data={dataEnseignant} />
       </div> */}

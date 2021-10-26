@@ -62,19 +62,11 @@ class FormEtudiant extends Component {
             this.truc.etudiant.classe,
             this.truc.etudiant.nbMatieres
         ));
-
-        console.log(this.truc.liste);
+        
+        this.setState({liste : this.truc.liste});
     }  
 
     render() {
-        let colEtudiant = [];
-        colEtudiant.push("NOM");
-        colEtudiant.push("PRÉNOM");
-        colEtudiant.push("ÂGE");
-        colEtudiant.push("ADRESSE");
-        colEtudiant.push("CLASSE");
-        colEtudiant.push("NB MATIÈRES");
-
         return (
             <div>
                 <form onSubmit={this.onSubmit}>
@@ -98,8 +90,14 @@ class FormEtudiant extends Component {
 
                     <button type="submit">Ajouter</button>
                 </form>
+                <br/>
+                {this.truc.liste.length > 0 &&
+                    <h2>Nos étudiants</h2>
+                }
+                {this.truc.liste.length > 0 &&
+                    <CompEtudiant tab_col={this.props.tab_col} tab_data={this.truc.liste}/>
+                }
                 
-                <CompEtudiant tab_col={colEtudiant} tab_data={this.truc.liste}/>
             </div>
         );
     }
