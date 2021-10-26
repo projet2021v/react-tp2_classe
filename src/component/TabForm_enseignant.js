@@ -8,7 +8,7 @@ class TabFormEnseignant extends Component {
     constructor(props) {
         super(props);
         this.truc = {
-            listeEns : []
+            listeEnseignants : []
         };
     }
 
@@ -29,25 +29,22 @@ class TabFormEnseignant extends Component {
                         (enseignant) => {
                             let ens = new Enseignant();
                             Object.assign(ens, enseignant);
-                            this.truc.listeEns.push(ens);
-                            this.setState({listeEns : this.truc.listeEns});
+                            this.truc.listeEnseignants.push(ens);
+                            this.setState({listeEns : this.truc.listeEnseignants});
                         }
                     }
                 />
                 <br/>
                 {
-                    this.truc.listeEns.length > 0 && 
+                    this.truc.listeEnseignants.length > 0 && 
                     <div>
                         <h2>Nos enseignants</h2>
-                        <TabEnseignant tab_data={this.truc.listeEns} />
-                    </div>
-                    
-                }
-                
+                        <TabEnseignant tab_data={this.truc.listeEnseignants} />
+                    </div> 
+                }  
             </div> 
         );
     }
-
 }
 
 export default TabFormEnseignant

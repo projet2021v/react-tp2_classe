@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# TP DIGIP02 : gestion enseignants et étudiants
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 01
+Gérer une classe Personne et des classes filles Enseignant et Etudiant
+Personne :
+Nom
+Prenom
+Age (Privé)
+Adresse (Privé)
 
-## Available Scripts
+Enseignant
+Poste
+Ancienneté (en année)
 
-In the project directory, you can run:
+Etudiant
+Classe
+NbMatière
 
-### `npm start`
+## 02
+Créer des composants pour afficher
+La liste des Enseignants
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Nom Prenom Age Adresse Poste Ancienneté
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Créer des composants pour afficher
+La liste des Etudiants
 
-### `npm test`
+Nom Prenom Age Adresse Classe NbMatières
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 03
+Après avoir affiché les Listes : 
+Faire un composant pour saisir un nouveau Enseignant
+Faire un composant pour saisir un nouveau Etudiant
 
-### `npm run build`
+Afficher les listes :
+s'il y a au moins un étudiant pour la liste des Etudiants
+S'il y a au moins un enseignant pour la liste des Enseignants
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 04
+Ajout d'un menu pour accéder à la gestion des Enseignants ou à la Gestion des Etudiants
+Mettre dans un console.log le "montage" et le "démontage" des composants
+Faire un menu
