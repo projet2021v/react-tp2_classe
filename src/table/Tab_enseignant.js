@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class CompEnseignant extends Component {
+class TabEnseignant extends Component {
 
     tableauEnseignant() {
         return (
@@ -22,8 +22,15 @@ class CompEnseignant extends Component {
     }
 
     headContent() {
-        let tabCol = this.props.tab_col ?? [];
-        return tabCol.map(
+        let colEnseignant = [];
+        colEnseignant.push("NOM");
+        colEnseignant.push("PRÉNOM");
+        colEnseignant.push("ÂGE");
+        colEnseignant.push("ADRESSE");
+        colEnseignant.push("POSTE");
+        colEnseignant.push("ANCIENNETÉ");
+        
+        return colEnseignant.map(
             (c) => <th>{c}</th>
         );
     }
@@ -46,7 +53,7 @@ class CompEnseignant extends Component {
                     <td>{enseignant.age}</td>
                     <td>{enseignant.adresse}</td>
                     <td>{enseignant.poste}</td>
-                    <td>{enseignant.anciennet}</td>
+                    <td>{enseignant.anciennete}</td>
                 </tr>
         );
     }
@@ -56,7 +63,6 @@ class CompEnseignant extends Component {
             this.tableauEnseignant()
         );
     }
-
 }
 
-export default CompEnseignant;
+export default TabEnseignant;

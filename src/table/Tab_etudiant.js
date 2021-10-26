@@ -1,9 +1,6 @@
 import { Component } from "react";
-import FormEtudiant from "../form/Form_etudiant";
 
-class CompEtudiant extends Component {
-
-    
+class TabEtudiant extends Component {
 
     tableauEtudiant() {
         return (
@@ -25,8 +22,15 @@ class CompEtudiant extends Component {
     }
 
     headContent() {
-        let tabCol = this.props.tab_col ?? [];
-        return tabCol.map(
+        let colEtudiant = [];
+        colEtudiant.push("NOM");
+        colEtudiant.push("PRÉNOM");
+        colEtudiant.push("ÂGE");
+        colEtudiant.push("ADRESSE");
+        colEtudiant.push("CLASSE");
+        colEtudiant.push("NB MATIÈRES");
+
+        return colEtudiant.map(
             (c) => <th>{c}</th>
         );
     }
@@ -62,4 +66,4 @@ class CompEtudiant extends Component {
 
 }
 
-export default CompEtudiant;
+export default TabEtudiant;
